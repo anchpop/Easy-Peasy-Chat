@@ -1,0 +1,26 @@
+.body {font: 1.12em Roboto, Arial, Helvetica; }
+
+.body form { background: #FFFFFF; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+
+.body #messages { list-style-type: none; margin: 0; padding: 0; padding-bottom: 40px; 
+	white-space: pre;           /* CSS 2.0 */
+	white-space: pre-wrap;      /* CSS 2.1 */
+	white-space: pre-line;      /* CSS 3.0 */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap;  /* HP Printers. Yes, you read that correctly */
+	word-wrap: break-word;      /* IE 5+ */
+}
+
+.modal-body .input-group { margin-bottom: 20px; }
+
+li {font-size: 1.12rem; cp; background: #F7F7F7; padding:2px; margin:5px;}
+
+li.highlight { background: #EEEEEE;}
+
+.information {font-weight: 700; font: Roboto, Arial, Helvetica; background: #FFFFFF}
+
+.namebox {min-width: 6000px; font-weight: bold;}
+
+.login-modal { font-family: Roboto, Arial, Helvetica; }

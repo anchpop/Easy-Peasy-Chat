@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+<meta name="HandheldFriendly" content="true" />
+<html>
+	<head>
+		<title><%= title %></title>
+    	<link rel="stylesheet" href="/stylesheets/foundation.css" />
+    	<link rel="stylesheet" href="/stylesheets/normalize.css">
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<link rel='stylesheet' href='/stylesheets/app.css' />
+    	<script src="javascripts/vendor/modernizr.js"></script>
+		<!--<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+		<link rel='stylesheet' href='/stylesheets/bootstrap-theme.min.css' />
+		<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' />-->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="login-modal" class="reveal-modal large" data-reveal>
+			<div style="font-size: 1.3em">Easy Peasy Chatroom <%= version %></div>
+			<div class="modal-body">
+				<p>Just a simple, <a href="https://github.com/anchpop/Easy-Peasy-Chatroom">open source</a> chatroom.</p>
+				<p>Created by Andre Popovitch.</p>
+				<form id="loginform">
+					<div class="row collapse">
+						<div class="large-10 small-8 columns">
+							<input id="nickname" type="text" placeholder="Nickname?">
+						</div>
+						<div class="large-2 small-4 columns">
+							<button id="pickforme" class="small button" type="button">Pick For Me!</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-2 small-centered columns">
+							<ul class="button-group even-1">
+								<li><button id="loginsubmit" type="submit" disabled class="medium success button">Connecting</button></li>
+							</ul>
+						</div>
+					</div>
+
+				</form>
+				<h6 style="text-align: center;"><a href="https://github.com/anchpop/easy-peasy-chatroom/issues">Bugs reports and feature requests</a></h6>
+				<h6 style="text-align: center;"><a href="/legal">Legal</a></h6>
+			</div>
+		</div>
+		<div class="body">
+			<div class="row">
+				<div class="small-12 columns">
+					<ul id="messages"></ul>
+				</div>
+			</div>
+			<br>
+
+			<form id="chatbar" >
+				<div class="row">
+					<div class="large-11 medium-11 columns">
+						<input id="m" type="text" autocomplete="off"></input>
+					</div>
+					<div class="large-1 medium-1 columns">
+						<button id="sendbutton" class="small button" type="submit" disabled>Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+	<script src="/javascripts/client.js"></script>
+	<script src="javascripts/vendor/jquery.js"></script>
+	<script src="javascripts/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+</html>
